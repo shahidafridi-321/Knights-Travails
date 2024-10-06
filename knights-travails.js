@@ -47,7 +47,7 @@ function knightMoves(start, destination) {
 				let newY = y + dy;
 
 				// If the move is inside the boundries and the Node is not visited then
-				if (isValid(newX, newY) && !visitedNodes.has([newX.newY])) {
+				if (isValid(newX, newY) && !visitedNodes.has([newX,newY])) {
 					visitedNodes.add([newX, newY].toString()); // Add the node as visited
 					queue.push([
 						[newX, newY],
